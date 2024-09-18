@@ -20,10 +20,12 @@ const generateDescription = async ({
           },
           {
             role: "user",
-            content: "Please create a fantasy story in ${numPanels} centered on ${idea}. 
-            The character descriptions are ${characters}. For each panel, provide a single sentence describing both the setting and the action in fewer than 20 words. 
-            Ensure each scene clearly integrates the setting and action into a straightforward sentence using simple language. 
+            content: `Please create a fantasy story in ${numPanels} panels centered on ${
+              idea
+            }. The character description are ${characters}. For each panel, provide a single sentence describing both the setting and the action in fewer than 20 words.
+              Ensure each scene clearly integrates the setting and action into a straightforward sentence using simple language. 
             Each scene should have a distinct and clear setting. ",
+            `,
           },
         ],
         max_tokens: 300,
