@@ -42,7 +42,7 @@ export default function Dashboard() {
             <div className="flex flex-col">
               <div className="flex mt-10 items-center space-x-3">
                          <div
-            style={{ backgroundColor: '#1A6292'}}
+            style={{ backgroundColor: '#5BBCFF'}}
             className="rounded-full w-8 h-8 flex items-center justify-center text-white font-bold text-sm">
             {1}
         </div>
@@ -50,9 +50,10 @@ export default function Dashboard() {
                             {"Characters"} 
                         </p>
                     </div>
-              <input
+              <textarea
                 type="text"
                 className="block w-full rounded-md bg-white border border-gray-400 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-4 py-2 placeholder-gray-500 my-2 text-gray-900"
+                rows={3}
                 name="characters"
                 placeholder="Characters"
                 id="characters"
@@ -62,9 +63,17 @@ export default function Dashboard() {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="idea" className="sr-only">
-                Idea
-              </label>
+                  <div className="flex mt-10 items-center space-x-3">
+                         <div
+            style={{ backgroundColor: '#5BBCFF'}}
+            className="rounded-full w-8 h-8 flex items-center justify-center text-white font-bold text-sm">
+            {2}
+        </div>
+                        <p className="text-left font-medium flex align-center">
+                            {"Story Idea"} 
+                        </p>
+                    </div>
+              
               <input
                 value={idea}
                 onChange={(e) => setIdea(e.target.value)}
@@ -76,9 +85,17 @@ export default function Dashboard() {
               />
             </div>
             <div className="flex flex-col">
-              <label className="sr-only" htmlFor="tone">
-                Number of Panels
-              </label>
+                <div className="flex mt-10 items-center space-x-3">
+                         <div
+            style={{ backgroundColor: '#5BBCFF'}}
+            className="rounded-full w-8 h-8 flex items-center justify-center text-white font-bold text-sm">
+            {3}
+        </div>
+                        <p className="text-left font-medium flex align-center">
+                            {"Number of  Panels"} 
+                        </p>
+                    </div>  
+             
 
               <select
                 value={numPanels}
