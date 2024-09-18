@@ -48,7 +48,7 @@ export default async function handler(req, res) {
   const { characters, idea, numPanels } = req.body;
 
   const storyDescription = await generateDescription({
-    character,
+    characters,
     idea,
     numPanels,
   });
