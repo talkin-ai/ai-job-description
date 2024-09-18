@@ -24,7 +24,7 @@ const generateDescription = async ({
               idea
             }. The character description are ${characters}. For each panel, provide a single sentence describing both the setting and the action in fewer than 20 words.
               Ensure each scene clearly integrates the setting and action into a straightforward sentence using simple language. 
-            Each scene should have a distinct and clear setting. One scene one row. Panel descriptor and summarization are unnecessary. No paragraph break.",
+            Each scene should have a distinct and clear setting. One scene one row. Panel descriptor and summarization are unnecessary. No paragraph spacing.",
             `,
           },
         ],
